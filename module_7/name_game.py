@@ -8,6 +8,7 @@
 # Date: 5 OCTOBER 2026
 
 name = input('What is your name? ')
+# define vowels
 vowels = ['a', 'i', 'e', 'u', 'o', 'y', 'A', 'I', 'E', 'U', 'O', 'Y']
 
 check = True

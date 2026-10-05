@@ -16,6 +16,7 @@ for number in numbers:
         number = int(number)
         num.append(number)
 
+# can use enumerate to get both index and value
 for i, number in enumerate(num):
     equal = False
     sum += number
