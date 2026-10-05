@@ -1,3 +1,12 @@
+# By submitting this assignment, I agree to the following:
+# "Aggies do not lie, cheat, or steal, or tolerate those who do."
+# "I have not given or received any unauthorized aid on this assignment."
+#
+# Name: THANH PHUNG
+# Section: 570
+# Assignment: Lab Topic 7
+# Date: 5 OCTOBER 2026
+
 numbers = input('Enter a four-digit integer: ')
 num = []
 num.append(numbers)
@@ -34,6 +43,9 @@ for number in num:
     if result == 6174:
         num.append(str(result))
         break
+    elif result == 0:
+        num.append(str(result))
+        break
     else:
         num.append(str(result))
 
@@ -45,4 +57,8 @@ for number in num:
         string += f'{number}'
 
 print(string)
-print(f'{num[0]} reaches 6174 via Kaprekar\'s routine in {len(num) - 1} iterations')
+
+if result == 6174:
+    print(f'{num[0]} reaches 6174 via Kaprekar\'s routine in {len(num) - 1} iterations')
+else:
+    print(f'{num[0]} reaches 0 via Kaprekar\'s routine in {len(num) - 1} iterations')
