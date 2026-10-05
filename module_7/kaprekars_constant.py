@@ -51,10 +51,10 @@ for number in num:
 
 
 for number in num:
-    if number != '6174':
-        string += f'{number} > ' 
+    if number == '6174' or number == '0':
+        string += f'{number}' 
     else: 
-        string += f'{number}'
+        string += f'{number} > '
 
 print(string)
 
