@@ -44,4 +44,19 @@ for i in range(len(month_sorted)):
     month = months[month], month_sorted[i][1]
     month_date_sort.append(month)
 
-print(month_date_sort)
+for date in month_date_sort:
+    print(date[0], date[1])
+
+# another way to work it out
+birthdays = []
+for i in range (5):
+    input1 = input(f'User {i+1} please enter a birthday: ')
+    month_name, date = input1.split()
+    month_num = months.index(month_name) + 1
+    birthdays.append([month_num, int(date), month_name]) 
+    # only take one argument but can put multiple in []
+
+birthdays.sort
+
+for b in birthdays:
+    print(b[2], b[1])
