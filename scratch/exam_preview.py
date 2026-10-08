@@ -207,3 +207,69 @@ for i in a:
         continue
     count += 1
     print(count)
+
+a = -11
+print(-a)
+
+x = 3
+y = 5
+print(x != y - 2)
+print(x >= 0 and not x < 10)
+print(x < 0 and x < 10)
+print(x >= 0 and x < 2)
+print(x < 0 or y < 5)
+print(not x > 0 or x < 10)
+
+print(str(float(str(3 / 2) + str(int(3 / 2)))) * int(int(str(2) + str(7)) / int(10.3)))
+# print(x = str(int("5 + 6"))) print out error code
+_10_KG_Mass = 10
+print(_10_KG_Mass)
+
+# problem 49
+a = [12, 89, 45, 12, 67, 3, 4, 9, 20, 34, 45, 67, 199, 67]
+count = 0
+for i in a:
+    if i % 5 == 0:    # this line is different
+        for j in range(len(a)):
+            if i == a[j]:
+                print(i, end=", ")
+                continue    # these 2 lines are different
+            else:
+                count += 1
+    else:
+        count -= 1
+print(count)
+
+
+# problem 48
+a = [12, 89, 45, 12, 67, 3, 4, 9, 20, 34, 45, 67, 199, 67]
+count = 0
+for i in a:
+    if i % 2 == 0:
+        for j in range(len(a)):
+            if i == a[j]:    # this line is different
+                break
+            else:
+                count += 1
+    else:
+        count -= 1
+print(count, a[0:234], sep='.  ')
+
+v = [9, 5, -3, 6, -1, 0]
+print(v[-6:2])
+
+# problem 37
+a = "My name is aitor"
+count = 0
+for i in a:
+    if i == "a":
+        print(a[:count+7])
+        print(count)
+    elif i == "i":
+        break
+    else:
+        continue
+    count += 1
+    print(count)
+
+
